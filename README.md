@@ -1,5 +1,5 @@
 # Welcome to the quayside Wiki! 
-This is where we outline the decisions and discoveries we made along the way!
+[This](https://quayside-app.github.io/Wiki/#/) is where we outline the decisions and discoveries we made along the way!
 
 
 ### Contributing to the Wiki
@@ -7,7 +7,6 @@ All the files for this website our stored a md files in our [github repository](
 
 **Setup.** 
 First, install docsify-cli to preview the website pages locally using `npm i docsify-cli -g` (if you don't have npm, you can download it through [node.js](https://nodejs.org/en/download)). Once installed, clone our [github repository](https://github.com/quayside-app/Wiki). Then in that directory run `docsify serve` to preview the site locally in your browser.
-<br> <br>
 
 **Editing.** 
 Make a md file for each page in the wiki, under the proper folder. Look at other md files for formatting guidelines; each wiki page should have a title, name of the editor(s), and date it was created. The wiki link should then be added to `_sidebar.md` so it shows up in the sidebar- in the future we should have a script do this for us ;).
