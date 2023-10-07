@@ -4,3 +4,6 @@
 
 * Cloud
     * [Hosting on Google Cloud Run](Cloud/CloudRun.md) 
+
+* ChatGPT
+    * [ChatGPT Integration and API](ChatGPT/API.md)
