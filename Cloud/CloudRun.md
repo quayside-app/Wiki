@@ -15,4 +15,4 @@ I was able to complete the google cloud integration with continuous deployment o
     I did this after completing our dockerfile. I just followed the google cloud guide:
     https://cloud.google.com/run/docs/continuous-deployment-with-cloud-build?authuser=2#new-service
 
-    I also added a the quayside.app domain to the cloud run service. It currently isn't working.
+    I also added a the quayside.app domain to the cloud run service by copying the given DNS addresses which are retrieveable from the custom domains page in the cloud run interface. They were placed into the quayside domain DNS section under custom domains.
