@@ -7,3 +7,5 @@
 
 * ChatGPT
     * [ChatGPT Integration and API](ChatGPT/API.md)
+* NextAuth.js
+    * [OAuth implementation using NextAuth.js](NextAuth.js/OAuth.md)
