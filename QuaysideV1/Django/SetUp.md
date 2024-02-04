@@ -82,15 +82,15 @@ Install Tailwind STEP 4:
 
 I attempted to put tailwind.config.js in the app/ directory as well, but found out after way to much fighting with the content file path, that it only likes being at the project root file directory. If it's not in the project root, it won't detect the tailwind classes in your html files (even if added relatively or absolutely to the content array) and will therefore not add the class references to output.css. 
 
-
-I was lazy and did not want to run the above command every time along with `python manage.py runserver` so I added a new django command to use to run both. I used chatGPT and [this tutorial](https://simpleisbetterthancomplex.com/tutorial/2018/08/27/how-to-create-custom-django-management-commands.html) so that when you run `python manage.py rundev`, it runs both.
+For tailwind, you have to run `npx tailwindcss -i ./app/static/app/src/input.css -o ./app/static/app/src/output.css --watch` every time along with `python manage.py runserver` when want to start the server and edit Tailwind CSS (the first command looks for new Tailwind CSS class and adds them to `output.css`).
+I was lazy and did not want to run both commands every time so I added a new django command to use to run both. I used chatGPT and [this tutorial](https://simpleisbetterthancomplex.com/tutorial/2018/08/27/how-to-create-custom-django-management-commands.html) so that when you run `python manage.py rundev`, it runs both.
 
 
 For automatic CSS reload without refreshing the browser, I installed django-browser-reload and followed the last 4 commands of[this article](https://blog.devgenius.io/django-tailwind-setup-made-easy-36043adda97c). 
 
 
 ## Static Files
-In my adventure with tailwind, I learned way more than I wanted about static files. Static folders are where you can put images, css, html, or any other static content.For static folders within apps [this](https://docs.djangoproject.com/en/5.0/howto/static-files/) is a good reference. A weird find I came across is that when you put static/ folder within an app (not just a project), you'll put a folder within the app with the apps name (ex/ `quayside/app/static/<staticFiles>`). This is because in production, all the static files from different apps are combined into 1 static folder, and django does not want to confuse the files.
+In my adventure with tailwind, I learned way more than I wanted about static files. Static folders are where you can put images, css, html, or any other static content.For static folders within apps [this](https://docs.djangoproject.com/en/5.0/howto/static-files/) is a good reference. A weird find I came across is that when you put static/ folder within an app (not just a project), you'll put a folder within the app with the apps name (ex/ `quayside/app/static/app/<staticFiles>`). This is because in production, all the static files from different apps are combined into 1 static folder, and django does not want to confuse the files.
 
  **Note for Future Self**: when serving django in production, you have to run `django-admin collectstatic` to combine static files into one big folder.
 
