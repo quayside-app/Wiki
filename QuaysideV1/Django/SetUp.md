@@ -12,14 +12,15 @@ python manage.py startapp api
 
 ```
 
-As for why I chose the file structure, I looked up some good options:
+As for why I chose the file structure...
+
+First I looked up some good options:
 
 * https://django-project-skeleton.readthedocs.io/en/latest/structure.html
 * https://medium.com/django-unleashed/django-project-structure-a-comprehensive-guide-4b2ddbf2b6b8
 * https://medium.com/@akshatgadodia/a-comprehensive-guide-to-structuring-django-projects-best-practices-and-example-afb77d8497d5  
 
-For this project, we want to start off with a REST API that can be accessed both internally by our webapp as well as externally if needed.
-I asked ChatGPT, how to create a file structure for this, and it suggested:
+For this project, we want to start off with a REST API that can be accessed both internally by our webapp as well as externally if needed. So then I asked ChatGPT, how to create a file structure for this, and it suggested:
 ```
 quayside_project/
     ├── quayside_app/
@@ -49,13 +50,14 @@ quayside_project/
     └── requirements.txt
 ```
 
-This higher level folders seemed like a good idea, so  went with it. 
+This higher level folders seemed like a good idea, so we went with it. 
 
 
 ## Tailwind
 We chose to continue using Tailwind CSS so to add it to django, I used [this tutorial](https://flowbite.com/docs/getting-started/django/). This lets you only "download" the tailwind classes you use to output.css when you use them so you don't have to load the whole tailwind library when you usee quayside. Note: it needs npm.
 
 However, I wanted most the tailwind static files just in the app folder, so I made these adjustments to the steps:
+
 STEP 2:
     Added this instead: `"DIRS": [BASE_DIR / 'app' / 'templates'],`
 
