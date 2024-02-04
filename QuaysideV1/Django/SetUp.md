@@ -86,7 +86,7 @@ For tailwind, you have to run `npx tailwindcss -i ./app/static/app/src/input.css
 I was lazy and did not want to run both commands every time so I added a new django command to use to run both. I used chatGPT and [this tutorial](https://simpleisbetterthancomplex.com/tutorial/2018/08/27/how-to-create-custom-django-management-commands.html) so that when you run `python manage.py rundev`, it runs both.
 
 
-For automatic CSS reload without refreshing the browser, I installed django-browser-reload and followed the last 4 commands of[this article](https://blog.devgenius.io/django-tailwind-setup-made-easy-36043adda97c). 
+For automatic CSS reload without refreshing the browser, I installed django-browser-reload and followed the last 4 commands of [this article](https://blog.devgenius.io/django-tailwind-setup-made-easy-36043adda97c). 
 
 
 ## Static Files
