@@ -1,6 +1,8 @@
 * Quayside V1
     * Django
         * [Set Up](QuaysideV1/Django/SetUp.md)
+        * [General Notes](QuaysideV1/Django/General.md)
+        * [MongoDB & Django](QuaysideV1/Django/Mongo.md)
 * Quayside MVP
     * Next.js
         * [How Next.js Impacts Front‐End Work](QuaysideMVP/Next.js/FrontEnd.md)

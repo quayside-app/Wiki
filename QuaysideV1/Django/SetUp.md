@@ -1,7 +1,7 @@
 # Setting Up Django
 **2/3/2024 • Mya Schroder**
 
-## Setting up
+## Installation
 First I made a venv and installed django. Then to set up django, I just followed the first couple steps of [this](https://docs.djangoproject.com/en/5.0/intro/tutorial01/) tutorial inside a venv. 
 ```bash
 django-admin startproject quayside
