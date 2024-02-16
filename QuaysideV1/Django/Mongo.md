@@ -114,6 +114,9 @@ urlpatterns = [
 ```
 
 
+TODO: https://pythonhosted.org/django-rest-framework-mongoengine/serializers/
+
+
 Citations: <br>
 [Read This Before Using Django With MongoDB](https://www.mongodb.com/compatibility/mongodb-and-django) <br>
 [How to Use Django with MongoDB](https://www.mongodb.com/compatibility/mongodb-and-django) <br>
