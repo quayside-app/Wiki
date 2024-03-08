@@ -3,6 +3,8 @@
         * [Set Up](QuaysideV1/Django/SetUp.md)
         * [General Notes](QuaysideV1/Django/General.md)
         * [MongoDB & Django](QuaysideV1/Django/Mongo.md)
+    * D3 
+        * [Graphs](QuaysideV1/D3/Graph.md)
 * Quayside MVP
     * Next.js
         * [How Next.js Impacts Front‐End Work](QuaysideMVP/Next.js/FrontEnd.md)
